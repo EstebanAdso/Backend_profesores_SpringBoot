@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "5d1d790c-042b-48f1-8c69-b36db3077df4",
+		"name": "Crud Profesores",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31547912"
+	},
+	"item": [
+		{
+			"name": "Obtener lista de profesores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8089/Teacher",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"Teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtrar por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8089/Teacher/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"Teacher",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Y Actualizar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"JUAN\",\r\n        \"lastName\": \"PEDRO\",\r\n        \"email\": \"NERO@GMAIL.COM\",\r\n        \"gender\": \"M\",\r\n        \"yearsExperience\": 10,\r\n        \"bornDate\": null,\r\n        \"subject\": \"INGLES\"\r\n        }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/Teacher",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"Teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar profesor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8089/Teacher/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"Teacher",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
